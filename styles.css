@@ -9,16 +9,23 @@ body {
 /*  font-family: "georgia"; */
 }
 
-h1 {
+/*h1 {
     color: #ffffff;
     background-color: #b3e6b3;
+    /*  opacity: 100%; } */
+.white-font {
+    color: #ffffff;
+}
+
+.teal-background {
+    background-color: #669999;
 }
 
 /* i'm thinking i want the whole thing to be georgia but we'll see*/
 .hero-image {
     /*  width: 100vw;*/
-    opacity: 30%;
     height: 300px;
+    opacity: 75%;
     padding-bottom: 40px;
     background-image: url(pipeline.jpeg);
     background-position: center;
@@ -29,14 +36,13 @@ h1 {
 
 .hero-image img {
     width: 100%;
-    opacity: 30%;
+    opacity: 0.2%;
 }
 
 .background {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 10%;
-    i need to figure out how to change the opacity on JUST the image and not on all elements of the page*/ background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -46,8 +52,23 @@ h1 {
     opacity: 100%;
 }
 
-h2 {
+.header-font {
+    font-family: georgia, serif;
+    color: #ffffff;
     text-align: left;
+}
+
+figcaption {
+    text-align: center;
+    font: bold;
+}
+
+h2 {
+    /*  text-align: left;*/
+    color: #669999;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 28px;
 }
 
 .container {
@@ -58,6 +79,22 @@ h2 {
 
 .grey-text {
     color: #857F88;
+    font: bold;
+}
+
+.teal-text {
+    color: #669999;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.peach-text {
+    color: #669999;
+    font-weight: bold;
 }
 
 .figcaption {
@@ -81,9 +118,9 @@ h2 {
 .left-box-real {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*  flex-wrap: wrap;*/
     position: absolute;
-    left: 75px;
+    left: 220px;
     width: 200px;
     height: 60px;
     margin-left: auto;
@@ -93,7 +130,7 @@ h2 {
     padding-left: 20px;
     padding-right: 300px;
     padding-top: 2px;
-    border: 3px solid #73AD21;
+    /*  border: 3px solid #73AD21;*/
     padding: 10px;
 }
 
@@ -102,7 +139,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    right: 600px;
+    right: 910px;
     width: 75px;
     height: 60px;
     margin-left: auto;
@@ -112,7 +149,7 @@ h2 {
     padding-left: 20px;
     padding-right: 300px;
     padding-top: 2px;
-    border: 3px solid #73AD21;
+    /*border: 3px solid #73AD21;*/
     padding: 10px;
 }
 
@@ -121,8 +158,8 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    right: 75px;
-    width: 450px;
+    right: 200px;
+    width: 600px;
     height: 60px;
     margin-left: auto;
     margin-right: 10px;
@@ -131,8 +168,12 @@ h2 {
     padding-left: 20px;
     padding-right: 300px;
     padding-top: 2px;
-    border: 3px solid #73AD21;
+    /*border: 3px solid #73AD21;*/
     padding: 10px;
+}
+
+.charcoal-font {
+    color: #595959;
 }
 
 /*.left-box {
@@ -195,7 +236,19 @@ green-border {
     height: 40px;
     margin-top: 80px;
     font: bold;
-    background-color: #b3e6b3;
+    background-color: #669999;
     color: #ffffff;
     text-align: center;
+}
+
+.header-font {
+    color: white !important;
+    opacity: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #669999;
 }
